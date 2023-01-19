@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player/Sprites/PopCorn.png" type="Texture" id=1]
+[ext_resource path="res://Player/Projectiles/Popcorn.gd" type="Script" id=2]
+[ext_resource path="res://Audio/Effects/Randomize.wav" type="AudioStream" id=3]
+
+[node name="Popcorn" type="Sprite"]
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]
