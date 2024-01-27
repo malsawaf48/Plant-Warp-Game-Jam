@@ -1,2 +1,2 @@
-Made for LOWREZJAM2023
-Play in Browser: https://mal48.itch.io/dark-magic
+Made for GBJAM 10
+Play in Browser: https://mal48.itch.io/plant-warp
